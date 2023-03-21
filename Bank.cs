@@ -27,16 +27,16 @@ public class BankAccount {
     }
     
     public decimal Deposit(decimal deposit) {
-        return balance = balance + deposit;
+        return Balance = balance + deposit;
     }
     
     public decimal Withdraw(decimal withdraw) {
-        return widthdraw = balance - withdraw;
+        return Balance = balance - withdraw;
     }
     
     public void CalculateInterest() {
-        public double _interest = balance * .ToDouble(interestRate);
-        public double _balance = balance + _interest;
+        public double _interest = Balance * .ToDouble(interestRate);
+        public double _balance = Balance + _interest;
         
         Console.WriteLine(_balance);
     }
