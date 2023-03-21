@@ -35,8 +35,8 @@ public class BankAccount {
     }
     
     public void CalculateInterest() {
-        public double _interest = Balance * .ToDouble(interestRate);
-        public double _balance = Balance + _interest;
+        decimal _interest = Balance * Convert.ToDecimal(interestRate);
+        decimal _balance = Balance + _interest;
         
         Console.WriteLine(_balance);
     }
@@ -44,10 +44,10 @@ public class BankAccount {
 
 class Bank {
     static void Main(String[] args) {
-        BankAccount bank = new BankAccount("2020-YR2020-RY2020-1024", 1024, 2);
+        BankAccount bank = new BankAccount("2020-YR2020-RY2020-1024", 0, 2);
         
-        Console.WriteLine(bank.Deposit(2048);
-        Console.WriteLine(bank.WithDraw(1024);
+        Console.WriteLine("Deposit: " + bank.Deposit(2048));
+        Console.WriteLine("Withdraw: " + bank.Withdraw(1024));
         bank.CalculateInterest();
     }
 }
